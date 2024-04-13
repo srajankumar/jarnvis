@@ -3,9 +3,8 @@ import React from "react";
 const Note = () => {
   return (
     <div className="text-sm text-start pt-2 tracking-wide  text-stone-400">
-      <p>
-        Note: The responses are not accurate as we are using open source API.
-      </p>
+      <span className="underline underline-offset-2">Note</span>: The responses
+      are not accurate as we are using open source API.
     </div>
   );
 };

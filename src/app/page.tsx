@@ -39,7 +39,7 @@ export default function PoemGenerator() {
           J.A.R.V.I.T-G
         </h1>
         <p className=" text-stone-400 shadow-md text-center text-sm">
-          Just a Rather Very Intelligent Text - Generator
+          Just A Rather Very Intelligent Text - Generator
         </p>
         <div className="flex flex-col items-end pb-5 max-w-2xl mx-auto">
           <img src="/line.svg" className="w-1/2" alt="line" />
