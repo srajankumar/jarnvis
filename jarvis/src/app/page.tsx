@@ -1,4 +1,3 @@
-// pages/poem-generator.js
 "use client";
 import { useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,7 +11,7 @@ export default function PoemGenerator() {
   const handleGeneratePoem = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3001/generate-poem", {
+      const response = await fetch("http://localhost:3000/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,6 +19,7 @@ export default function PoemGenerator() {
         body: JSON.stringify({ text: inputText }),
       });
       const data = await response.json();
+      console.log(data);
       setGeneratedPoem(data[0].generated_text);
     } catch (error) {
       console.error("Error:", error);
