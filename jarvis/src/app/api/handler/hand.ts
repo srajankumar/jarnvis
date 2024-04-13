@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 
-const api_token = process.env.NEXT_PUBLIC_PRODUCTION;
+const token = "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";
 
 export async function POST(req: NextRequest) {
   try {
@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
       "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta",
       {
         headers: {
-          Authorization: `Bearer ${api_token}`,
+          Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
         method: "POST",
