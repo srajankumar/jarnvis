@@ -6,6 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Note from "@/components/Note";
+import GitHubLink from "@/components/GitHubLink";
 
 export default function PoemGenerator() {
   const [inputText, setInputText] = useState("");
@@ -34,6 +35,7 @@ export default function PoemGenerator() {
 
   return (
     <div className="min-h-[100dvh] flex justify-center items-center">
+      <GitHubLink />
       <div className="max-w-3xl w-screen mx-auto px-5 will-change-transform will-change-opacity">
         <h1 className="text-2xl font-semibold text-center pb-2">
           J.A.R.V.I.T-G
@@ -44,7 +46,6 @@ export default function PoemGenerator() {
         <div className="flex flex-col items-end pb-5 max-w-2xl mx-auto">
           <img src="/line.svg" className="w-1/2" alt="line" />
         </div>
-
         <div className="flex flex-col gap-5">
           <Textarea
             value={inputText}

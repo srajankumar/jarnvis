@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "J.A.R.V.I.T-G",
   description: "Just A Rather Very Intelligent Text - Generator",
+  creator: "srajankumar",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
