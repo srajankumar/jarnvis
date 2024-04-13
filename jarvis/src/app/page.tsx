@@ -30,7 +30,7 @@ export default function PoemGenerator() {
   return (
     <div className="max-w-5xl mx-auto my-40 px-5 min-h-[100dvh]">
       <h1 className="text-2xl font-semibold text-center pb-2">
-        J.A.R.V.I.S, but not Tony's
+        J.A.R.V.I.S, but not Tony&apos;s
       </h1>
       <p className="pb-5 text-center">Enter your command sir</p>
       <div className="flex flex-col gap-5">
