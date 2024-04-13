@@ -8,10 +8,12 @@ export default function PoemGenerator() {
   const [generatedPoem, setGeneratedPoem] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const prod = process.env.NEXT_PUBLIC_PRODUCTION;
+
   const handleGeneratePoem = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/api", {
+      const response = await fetch(`${prod}/api`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
