@@ -38,10 +38,10 @@ export default function PoemGenerator() {
       <GitHubLink />
       <div className="max-w-3xl w-screen mx-auto px-5 will-change-transform will-change-opacity">
         <h1 className="text-2xl font-semibold text-center pb-2">
-          J.A.R.V.I.T-G
+          J.A.R.N.V.I.S
         </h1>
         <p className=" text-stone-400 shadow-md text-center text-sm">
-          Just A Rather Very Intelligent Text - Generator
+          Just A Rather Not Very Intelligent System
         </p>
         <div className="flex flex-col items-end pb-5 max-w-2xl mx-auto">
           <img src="/line.svg" className="w-1/2" alt="line" />

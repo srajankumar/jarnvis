@@ -6,8 +6,8 @@ import { HeroHighlight } from "@/components/ui/hero-highlight";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "J.A.R.V.I.T-G",
-  description: "Just A Rather Very Intelligent Text - Generator",
+  title: "J.A.R.N.V.I.S",
+  description: "Just A Rather Not Very Intelligent System",
   creator: "srajankumar",
   icons: {
     icon: "/favicon.ico",

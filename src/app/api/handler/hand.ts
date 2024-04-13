@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     console.log("Request Text:", text);
     const fetch = await import("node-fetch");
     const apiResponse = await fetch.default(
-      "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta",
+      "https://api-inference.huggingface.co/models/google/flan-t5-base",
       {
         headers: {
           Authorization: `Bearer ${token}`,
