@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
 
-const token = "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";
+const token = process.env.NEXT_PUBLIC_API_TOKEN;
 
 export async function POST(req: NextRequest) {
   try {

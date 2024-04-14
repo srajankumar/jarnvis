@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 
+import { toast } from "sonner";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Note from "@/components/Note";
-import GitHubLink from "@/components/GitHubLink";
 
 export default function PoemGenerator() {
   const [inputText, setInputText] = useState("");
@@ -28,14 +28,14 @@ export default function PoemGenerator() {
       const data = await response.json();
       setGeneratedText(data[0].generated_text);
     } catch (error) {
-      console.error("Error:", error);
+      toast("An error has occurred. Please try again.");
+      console.error("Error: ", error);
     }
     setLoading(false);
   };
 
   return (
     <div className="min-h-[100dvh] flex justify-center items-center">
-      <GitHubLink />
       <div className="max-w-3xl w-screen mx-auto px-5 will-change-transform will-change-opacity">
         <h1 className="text-2xl font-semibold text-center pb-2">
           J.A.R.N.V.I.S
